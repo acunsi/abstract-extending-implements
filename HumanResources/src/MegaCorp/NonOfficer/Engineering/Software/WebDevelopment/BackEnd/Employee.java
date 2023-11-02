@@ -1,8 +1,5 @@
 package MegaCorp.NonOfficer.Engineering.Software.WebDevelopment.BackEnd;
 
-import MegaCorp.NonOfficer.Engineering.Software.WebDevelopment.BackEnd.Categories;
-import MegaCorp.NonOfficer.Engineering.Software.WebDevelopment.BackEnd.IEmployee;
-
 import java.util.Collections;
 
 
@@ -21,7 +18,7 @@ public class Employee extends Categories implements IEmployee {
 
     protected String buildCertifications() {
         StringBuilder certStringBuilder = new StringBuilder(super.buildCertifications());
-        certStringBuilder.append("\n\t\tWeb FE Certifications : ");
+        certStringBuilder.append("\n\t\tWeb BE Certifications : ");
         for (String cert : certifications) {
             certStringBuilder.append("\n\t\t\t").append(cert);
         }
